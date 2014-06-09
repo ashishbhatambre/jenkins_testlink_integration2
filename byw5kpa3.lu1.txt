@@ -1,0 +1,13 @@
+﻿
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	new file:   new/src/com/example/tests/IConstantes.java
+#	new file:   new/src/com/example/tests/ResultadoExecucao.java
+#	new file:   new/src/com/example/tests/login.java
+#	modified:   src/test/java/jenkins/plugins/testlink/examples/TestCurrentTime3.java
+#
+

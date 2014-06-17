@@ -133,7 +133,7 @@
 					        <groupId>xmlrpc</groupId>
 					        <artifactId>xmlrpc</artifactId>
 					        <scope>system</scope>
-					        <version></version>
+					        <version>1</version>
 					        <systemPath>${basedir}\src\test\resources\cfg\xmlrpc.jar</systemPath>
 					    </dependency>
 					<dependency>

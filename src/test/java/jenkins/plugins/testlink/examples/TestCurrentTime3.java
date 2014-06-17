@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
-package jenkins.plugins.testlink.examples;
+package com.example.tests;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;

@@ -129,13 +129,7 @@
 					        <version>1.0.2</version>
 					        <systemPath>${basedir}\src\test\resources\cfg\ws-commons-util-1.0.2.jar</systemPath>
 					    </dependency>
-					<dependency>
-					        <groupId>xmlrpc</groupId>
-					        <artifactId>xmlrpc</artifactId>
-					        <scope>system</scope>
-					        <version>1</version>
-					        <systemPath>${basedir}\src\test\resources\cfg\xmlrpc.jar</systemPath>
-					    </dependency>
+					
 					<dependency>
 					        <groupId>xmlrpc-client</groupId>
 					        <artifactId>xmlrpc-client</artifactId>

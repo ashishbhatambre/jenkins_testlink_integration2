@@ -409,7 +409,7 @@
 							        <artifactId>testlink-api-client</artifactId>
 							        <scope>system</scope>
 							        <version>2.0</version>
-							        <systemPath>C:/Users/ashish/Documents/GitHub/jenkins_testlink_integration2/src/test/resources/cfg/testlink-api-client-2.0.jar</systemPath>
+							        <systemPath>>${basedir}/src/test/resources/cfg/testlink-api-client-2.0.jar</systemPath>
 							    </dependency>
 
 

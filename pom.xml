@@ -407,9 +407,10 @@
 							<dependency>
 							        <groupId>testlink-api-client</groupId>
 							        <artifactId>testlink-api-client</artifactId>
-							        <scope>system</scope>
+							       <scope>system</scope>
+
 							        <version>2.0</version>
-							        <systemPath>>${basedir}/src/test/resources/cfg/testlink-api-client-2.0.jar</systemPath>
+							        <systemPath>/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven_3.2.1/lib/testlink-api-client-2.0.jar</systemPath>
 							    </dependency>
 
 

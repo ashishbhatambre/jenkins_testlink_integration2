@@ -30,7 +30,7 @@ public class login implements IConstantes{
 	  private StringBuffer verificationErrors = new StringBuffer();
 
 	 // @Before
-	  public void setUp() throws Exception {
+	 /* public void setUp() throws Exception {
 	    driver = new FirefoxDriver();
 	    baseUrl = "http://cu156.cloud.maa.collab.net/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
@@ -102,7 +102,7 @@ public class login implements IConstantes{
 	    } finally {
 	      acceptNextAlert = true;
 	    }
-	  }
+	  }*/
 	 public void login()  {
 		// TODO Auto-generated method stub
 		 System.out.println("hello world");

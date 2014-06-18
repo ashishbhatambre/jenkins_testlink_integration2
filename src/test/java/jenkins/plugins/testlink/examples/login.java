@@ -102,7 +102,7 @@ public class login implements IConstantes{
 	      acceptNextAlert = true;
 	    }
 	  }
-	 /*public void login()  {
+	 public void login()  {
 		// TODO Auto-generated method stub
 		 
            login lo=new login();
@@ -121,24 +121,8 @@ public class login implements IConstantes{
    		
    		Assert.assertFalse( System.currentTimeMillis() > 0 );
    		System.out.println("hello world");
-		 }*/
-	  public static void main(String[] args) throws Exception {
-			// TODO Auto-generated method stub
-			 
-	           login lo=new login();
-	          
-	           //ResultadoExecucao re= new ResultadoExecucao();
-	           //re.reportTestCaseResult1(PROJETO, PLANO, CASO_TESTE1, BUILD, nota, resultado);
-	           
-	           lo.setUp();
-	           lo.testLogin();
-	           lo.tearDown();
-			
-	          // Assert.assertNotNull( System.currentTimeMillis() );
-	   		
-	   		//Assert.assertFalse( System.currentTimeMillis() > 0 );
-	   		//System.out.println();
-			 }
+		 }
+	  
 	}
 
 

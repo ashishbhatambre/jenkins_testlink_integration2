@@ -104,9 +104,9 @@ public class login implements IConstantes{
 	  }
 	 public void login()  {
 		// TODO Auto-generated method stub
-		 
+		 System.out.println("hello world");
            login lo=new login();
-           try{
+           /*try{
            //ResultadoExecucao re= new ResultadoExecucao();
            //re.reportTestCaseResult1(PROJETO, PLANO, CASO_TESTE1, BUILD, nota, resultado);
            
@@ -116,12 +116,13 @@ public class login implements IConstantes{
 		 }
 		 catch(Exception e){
 			 e.printStackTrace();
-		 }
+		 }*/
            Assert.assertNotNull( System.currentTimeMillis() );
    		
-   		Assert.assertFalse( System.currentTimeMillis() > 0 );
-   		System.out.println("hello world");
+   		Assert.assertTrue( System.currentTimeMillis() > 0 );
+   		//System.out.println("hello world");
 		 }
+	 
 	  
 	}
 

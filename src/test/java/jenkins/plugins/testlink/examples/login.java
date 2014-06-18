@@ -1,19 +1,19 @@
 package jenkins.plugins.testlink.examples;
-import java.util.regex.Pattern;
+//import java.util.regex.Pattern;
 import java.util.concurrent.TimeUnit;
-import org.junit.*;
+//import org.junit.*;
 import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+//import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+//import org.openqa.selenium.support.ui.Select;
+//import org.testng.Assert;
+//import org.testng.annotations.Test;
 
-import java.util.Date;
-import com.thoughtworks.selenium.*;
-import org.testng.Reporter;
-import org.testng.annotations.*;
+//import java.util.Date;
+//import com.thoughtworks.selenium.*;
+//import org.testng.Reporter;
+//import org.testng.annotations.*;
 import testlink.api.java.client.TestLinkAPIResults;
 
 
@@ -21,8 +21,8 @@ import testlink.api.java.client.TestLinkAPIResults;
 
 public class login implements IConstantes{
 
-	static String resultado = null;
-	  static String nota = null;
+	private String resultado = null;
+	  private String nota = null;
 	private WebDriver driver;
 	  private String baseUrl;
 	  private boolean acceptNextAlert = true;
@@ -105,7 +105,7 @@ public class login implements IConstantes{
 	 public void login()  {
 		// TODO Auto-generated method stub
 		 System.out.println("hello world");
-           login lo=new login();
+           //login lo=new login();
            /*try{
            //ResultadoExecucao re= new ResultadoExecucao();
            //re.reportTestCaseResult1(PROJETO, PLANO, CASO_TESTE1, BUILD, nota, resultado);

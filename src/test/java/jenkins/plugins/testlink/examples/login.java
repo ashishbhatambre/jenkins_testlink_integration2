@@ -102,7 +102,7 @@ public class login implements IConstantes{
 	      acceptNextAlert = true;
 	    }
 	  }
-	 public login()  {
+	 public void login()  {
 		// TODO Auto-generated method stub
 		 
            login lo=new login();

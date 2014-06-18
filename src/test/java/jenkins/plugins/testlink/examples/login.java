@@ -3,6 +3,7 @@ package jenkins.plugins.testlink.examples;
 import java.util.concurrent.TimeUnit;
 //import org.junit.*;
 import static org.junit.Assert.*;
+import org.testng.Assert;
 //import static org.hamcrest.CoreMatchers.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;

@@ -120,7 +120,7 @@ public class login implements IConstantes{
            Assert.assertNotNull( System.currentTimeMillis() );
    		
    		Assert.assertFalse( System.currentTimeMillis() > 0 );
-   		System.out.println();
+   		System.out.println("hello world");
 		 }
 	}
 

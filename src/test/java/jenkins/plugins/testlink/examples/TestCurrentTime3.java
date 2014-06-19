@@ -68,8 +68,18 @@ public class TestCurrentTime3
 	{
 		TestCurrentTime3 lo=new TestCurrentTime3();
 		
-		
-		 lo.setUp();
+		try{
+	           //ResultadoExecucao re= new ResultadoExecucao();
+	           //re.reportTestCaseResult1(PROJETO, PLANO, CASO_TESTE1, BUILD, nota, resultado);
+	           
+	           lo.setUp();
+	           //lo.testLogin();
+	          // lo.tearDown();
+			 }
+			 catch(Exception e){
+				 e.printStackTrace();
+			 }
+
 		Assert.assertNotNull( System.currentTimeMillis() );
 		
 		Assert.assertTrue( System.currentTimeMillis() > 0 );

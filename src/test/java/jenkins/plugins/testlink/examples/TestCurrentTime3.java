@@ -18,13 +18,30 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH E USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  */
 package jenkins.plugins.testlink.examples;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import java.util.concurrent.TimeUnit;
+//import org.junit.*;
+import static org.junit.Assert.*;
+import org.testng.Assert;
+//import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.support.ui.Select;
+//import org.testng.Assert;
+//import org.testng.annotations.Test;
+
+//import java.util.Date;
+//import com.thoughtworks.selenium.*;
+//import org.testng.Reporter;
+//import org.testng.annotations.*;
+import testlink.api.java.client.TestLinkAPIResults;
+
 
 /**
  * Tests System.currentTimeMillis()

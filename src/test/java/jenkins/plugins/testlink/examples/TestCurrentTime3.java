@@ -61,9 +61,9 @@ public class TestCurrentTime3
 		 
 
 	//@Test
-	public void testCurrentTime3() 
+	public void TestCurrentTime3() 
 	{
-		testCurrentTime3 lo=new testCurrentTime3();
+		TestCurrentTime3 lo=new TestCurrentTime3();
 		
 		
 		 lo.setUp();

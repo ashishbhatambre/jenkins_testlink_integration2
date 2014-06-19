@@ -1,9 +1,11 @@
 package jenkins.plugins.testlink.examples;
 //import java.util.regex.Pattern;
-import java.util.concurrent.TimeUnit;
+//import java.util.concurrent.TimeUnit;
 //import org.junit.*;
-import static org.junit.Assert.*;
+//import static org.junit.Assert.*;
 import org.testng.Assert;
+import org.testng.annotations.Test;
+
 //import static org.hamcrest.CoreMatchers.*;
 //import org.openqa.selenium.*;
 //import org.openqa.selenium.firefox.FirefoxDriver;
@@ -15,7 +17,7 @@ import org.testng.Assert;
 //import com.thoughtworks.selenium.*;
 //import org.testng.Reporter;
 //import org.testng.annotations.*;
-import testlink.api.java.client.TestLinkAPIResults;
+//import testlink.api.java.client.TestLinkAPIResults;
 
 
 

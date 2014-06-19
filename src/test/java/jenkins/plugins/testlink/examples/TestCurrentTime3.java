@@ -67,18 +67,21 @@ public class TestCurrentTime3
 	public void TestCurrentTime3() 
 	{
 		TestCurrentTime3 lo=new TestCurrentTime3();
+		driver = new FirefoxDriver();
+	    baseUrl = "http://cu156.cloud.maa.collab.net/";
+	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		
-		try{
+		/*try{
 	           //ResultadoExecucao re= new ResultadoExecucao();
 	           //re.reportTestCaseResult1(PROJETO, PLANO, CASO_TESTE1, BUILD, nota, resultado);
 	           
-	           lo.setUp();
+	           //lo.setUp();
 	           //lo.testLogin();
 	          // lo.tearDown();
 			 }
 			 catch(Exception e){
 				 e.printStackTrace();
-			 }
+			 }*/
 
 		Assert.assertNotNull( System.currentTimeMillis() );
 		

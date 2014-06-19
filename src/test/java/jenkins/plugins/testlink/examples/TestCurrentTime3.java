@@ -24,12 +24,12 @@ import org.testng.annotations.Test;
 
 public class TestCurrentTime3 {
 
-	private String resultado = null;
-	  private String nota = null;
+	//private String resultado = null;
+	  //private String nota = null;
 	//private WebDriver driver;
-	  private String baseUrl;
-	  private boolean acceptNextAlert = true;
-	  private StringBuffer verificationErrors = new StringBuffer();
+	  //private String baseUrl;
+	 //private boolean acceptNextAlert = true;
+	 // private StringBuffer verificationErrors = new StringBuffer();
 
 	 // @Before
 	 /* public void setUp() throws Exception {

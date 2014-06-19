@@ -58,13 +58,9 @@ public class TestCurrentTime3
 	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
 	  //@Before
-		 public void setUp() throws Exception {
-		    driver = new FirefoxDriver();
-		    baseUrl = "http://cu156.cloud.maa.collab.net/";
-		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		  }
+		 
 
-	@Test
+	//@Test
 	public void testCurrentTime3() 
 	{
 		testCurrentTime3 lo=new testCurrentTime3();
@@ -75,5 +71,10 @@ public class TestCurrentTime3
 		
 		Assert.assertTrue( System.currentTimeMillis() > 0 );
 	}
+	 public void setUp() throws Exception {
+		    driver = new FirefoxDriver();
+		    baseUrl = "http://cu156.cloud.maa.collab.net/";
+		    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		  }
 	
 }

@@ -62,8 +62,9 @@ public class TestCurrentTime3
 	//@Test
 	public void TestCurrentTime3() 
 	{
-		System.out.println("hello world");
+		//System.out.println("hello world");
 		TestCurrentTime3 lo=new TestCurrentTime3();
+		System.out.println("hello world");
 		driver = new FirefoxDriver();
 	    baseUrl = "http://cu156.cloud.maa.collab.net/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

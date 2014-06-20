@@ -410,7 +410,7 @@
 							       <scope>system</scope>
 
 							        <version>2.0</version>
-							        <systemPath>/var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven_3.2.1/lib/testlink-api-client-2.0.jar</systemPath>
+							        <systemPath>/u1/jenkins/tools/hudson.tasks.Maven_MavenInstallation/maven_3.2.1/lib/testlink-api-client-2.0.jar</systemPath>
 							    </dependency>
 
 

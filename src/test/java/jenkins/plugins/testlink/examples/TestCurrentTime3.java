@@ -25,7 +25,7 @@ package jenkins.plugins.testlink.examples;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import java.util.concurrent.TimeUnit;
+/*import java.util.concurrent.TimeUnit;
 //import org.junit.*;
 import static org.junit.Assert.*;
 import org.testng.Assert;
@@ -40,7 +40,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 //import com.thoughtworks.selenium.*;
 //import org.testng.Reporter;
 //import org.testng.annotations.*;
-import testlink.api.java.client.TestLinkAPIResults;
+import testlink.api.java.client.TestLinkAPIResults;*/
 
 
 /**
@@ -51,19 +51,13 @@ import testlink.api.java.client.TestLinkAPIResults;
  */
 public class TestCurrentTime3
 {
-	/*private String resultado = null;
-	  private String nota = null;
-	private WebDriver driver;
-	  private String baseUrl;
-	  private boolean acceptNextAlert = true;
-	  private StringBuffer verificationErrors = new StringBuffer();*/
+	
 	  //@Before
 	
 	//@Test
 	public void TestCurrentTime3() 
 	{
-		//System.out.println("hello world");
-		//TestCurrentTime3 lo=new TestCurrentTime3();
+		
 		System.out.println("hello world");
 		//driver = new FirefoxDriver();
 	    //baseUrl = "http://cu156.cloud.maa.collab.net/";

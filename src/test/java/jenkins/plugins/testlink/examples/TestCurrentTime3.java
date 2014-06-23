@@ -25,6 +25,22 @@ package jenkins.plugins.testlink.examples;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import java.util.concurrent.TimeUnit;
+//import org.junit.*;
+import static org.junit.Assert.*;
+import org.testng.Assert;
+//import static org.hamcrest.CoreMatchers.*;
+import org.openqa.selenium.*;
+import org.openqa.selenium.firefox.FirefoxDriver;
+//import org.openqa.selenium.support.ui.Select;
+//import org.testng.Assert;
+//import org.testng.annotations.Test;
+
+//import java.util.Date;
+//import com.thoughtworks.selenium.*;
+//import org.testng.Reporter;
+//import org.testng.annotations.*;
+import testlink.api.java.client.TestLinkAPIResults;
 
 /**
  * Tests System.currentTimeMillis()

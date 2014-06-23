@@ -50,7 +50,12 @@ import testlink.api.java.client.TestLinkAPIResults;
  */
 public class TestCurrentTime3
 {
-
+	private String resultado = null;
+	  private String nota = null;
+	private WebDriver driver;
+	  private String baseUrl;
+	  private boolean acceptNextAlert = true;
+	  private StringBuffer verificationErrors = new StringBuffer();
 	@Test
 	public void testCurrentTime3() 
 	{

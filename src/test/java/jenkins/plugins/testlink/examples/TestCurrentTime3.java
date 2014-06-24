@@ -63,6 +63,7 @@ public class TestCurrentTime3
 		
 		Assert.assertTrue( System.currentTimeMillis() > 0 );
 		System.out.println("TestCurrentTime3 working");
+		System.out.println(id);
 		driver = new FirefoxDriver();
 	    baseUrl = "http://cu156.cloud.maa.collab.net/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);

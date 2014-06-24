@@ -41,6 +41,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.testng.Reporter;
 //import org.testng.annotations.*;
 import testlink.api.java.client.TestLinkAPIResults;
+import testlink.api.java.client.TestLinkAPIClient;
+import testlink.api.java.client.TestLinkAPIException;
+
 
 /**
  * Tests System.currentTimeMillis()
@@ -56,12 +59,12 @@ public class TestCurrentTime3
 	  private String baseUrl;
 	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
-	  final String DEVKEY = "be6ca98d2442f2f7b1b2e64fa64b360b";
-		final String URL = "https://trialzone.collab.net/testlink/lib/api/xmlrpc/v1/xmlrpc.php";
-		final String PROJETO = "almagile";
-		final String PLANO = "Test Plan - Iteration 1";
-		final String BUILD = "Build 100";
-		final String CASO_TESTE1 = "Testcase.1001";
+	  final String DEVKEY = "c3ec77835ff0f63da1faae2b526e552f";
+		final String URL = "http://localhost:8081/testlink-1.9.10/lib/api/xmlrpc/v1/xmlrpc.php";
+		final String PROJETO = "testproj1";
+		final String PLANO = "testplan1";
+		final String BUILD = "build1";
+		final String CASO_TESTE1 = "case2";
 	@Test
 	public void testCurrentTime3() 
 	{

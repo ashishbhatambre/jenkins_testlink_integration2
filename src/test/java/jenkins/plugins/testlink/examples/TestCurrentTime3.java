@@ -70,7 +70,7 @@ public class TestCurrentTime3
 	{
 		Assert.assertNotNull( System.currentTimeMillis() );
 		
-		Assert.assertTrue( System.currentTimeMillis() > 0 );
+		//Assert.assertTrue( System.currentTimeMillis() > 0 );
 		System.out.println("TestCurrentTime3 working");
 		//System.out.println(id);
 		driver = new FirefoxDriver();
@@ -87,19 +87,16 @@ public class TestCurrentTime3
 			assertTrue(driver.findElement(By.cssSelector("BODY")).getText()
 					.matches("^[\\s\\S]*My Workspace[\\s\\S]*$"));
 			System.out.println("passed");
-			resultado = TestLinkAPIResults.TEST_PASSED;
+			Assert.assertTrue( System.currentTimeMillis() > 0 );
+			//resultado = TestLinkAPIResults.TEST_PASSED;
 		} catch (Error e) {
 			System.out.println("failed");
 			resultado = TestLinkAPIResults.TEST_FAILED;
+			Assert.assertFalse( System.currentTimeMillis() > 0 );
 			nota = e.getMessage();
 			verificationErrors.append(e.toString());
 		}
-		try {
-			TestLinkAPIClient testlinkAPIClient = new TestLinkAPIClient(DEVKEY,URL);
-			testlinkAPIClient.reportTestCaseResult(PROJETO, PLANO,CASO_TESTE1, BUILD, nota, resultado);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		
 	    
 	}
 	

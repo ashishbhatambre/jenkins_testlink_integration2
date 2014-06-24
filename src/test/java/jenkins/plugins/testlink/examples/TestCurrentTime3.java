@@ -67,6 +67,24 @@ public class TestCurrentTime3
 		driver = new FirefoxDriver();
 	    baseUrl = "http://cu156.cloud.maa.collab.net/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+	    driver.get(baseUrl + "/sf/sfmain/do/home");
+		driver.findElement(By.id("username")).clear();
+		driver.findElement(By.id("username")).sendKeys("admin");
+		driver.findElement(By.id("pwd")).clear();
+		driver.findElement(By.id("pwd")).sendKeys("admin");
+		driver.findElement(By.cssSelector("strong")).click();
+		// Warning: verifyTextPresent may require manual changes
+		try {
+			assertTrue(driver.findElement(By.cssSelector("BODY")).getText()
+					.matches("^[\\s\\S]*My Workspace[\\s\\S]*$"));
+			System.out.println("passed");
+			resultado = TestLinkAPIResults.TEST_PASSED;
+		} catch (Error e) {
+			System.out.println("failed");
+			resultado = TestLinkAPIResults.TEST_FAILED;
+			nota = e.getMessage();
+			verificationErrors.append(e.toString());
+		}
 	}
 	
 }

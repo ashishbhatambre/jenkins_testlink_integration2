@@ -85,7 +85,7 @@ public class TestCurrentTime3
 		// Warning: verifyTextPresent may require manual changes
 		try {
 			assertTrue(driver.findElement(By.cssSelector("BODY")).getText()
-					.matches("^[\\s\\S]*My Workspace[\\s\\S]*$"));
+					.matches("^[\\s\\S]*My Workspacedsfds[\\s\\S]*$"));
 			System.out.println("passed");
 			Assert.assertTrue( System.currentTimeMillis() > 0 );
 			//resultado = TestLinkAPIResults.TEST_PASSED;

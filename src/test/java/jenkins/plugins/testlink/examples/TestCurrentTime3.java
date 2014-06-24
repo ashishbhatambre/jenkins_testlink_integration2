@@ -56,6 +56,12 @@ public class TestCurrentTime3
 	  private String baseUrl;
 	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
+	  final String DEVKEY = "be6ca98d2442f2f7b1b2e64fa64b360b";
+		final String URL = "https://trialzone.collab.net/testlink/lib/api/xmlrpc/v1/xmlrpc.php";
+		final String PROJETO = "almagile";
+		final String PLANO = "Test Plan - Iteration 1";
+		final String BUILD = "Build 100";
+		final String CASO_TESTE1 = "Testcase.1001";
 	@Test
 	public void testCurrentTime3() 
 	{
@@ -85,6 +91,13 @@ public class TestCurrentTime3
 			nota = e.getMessage();
 			verificationErrors.append(e.toString());
 		}
+		try {
+			TestLinkAPIClient testlinkAPIClient = new TestLinkAPIClient(DEVKEY,URL);
+			testlinkAPIClient.reportTestCaseResult(PROJETO, PLANO,CASO_TESTE1, BUILD, nota, resultado);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	    
 	}
 	
 }

@@ -74,18 +74,18 @@ public class login
 		System.out.println("login3 working");
 		//System.out.println(id);
 		driver = new FirefoxDriver();
-	    baseUrl = "http://cu156.cloud.maa.collab.net/";
+	    baseUrl = "https://trialzone.collab.net/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 	    driver.get(baseUrl + "/sf/sfmain/do/home");
 		driver.findElement(By.id("username")).clear();
-		driver.findElement(By.id("username")).sendKeys("admin");
+		driver.findElement(By.id("username")).sendKeys("tluser");
 		driver.findElement(By.id("pwd")).clear();
-		driver.findElement(By.id("pwd")).sendKeys("admin");
+		driver.findElement(By.id("pwd")).sendKeys("Collabnet1!");
 		driver.findElement(By.cssSelector("strong")).click();
 		// Warning: verifyTextPresent may require manual changes
 		try {
 			assertTrue(driver.findElement(By.cssSelector("BODY")).getText()
-					.matches("^[\\s\\S]*My Workspace[\\s\\S]*$"));
+					.matches("^[\\s\\S]*My Workspacedzfx[\\s\\S]*$"));
 			System.out.println("passed");
 			Assert.assertTrue( System.currentTimeMillis() > 0 );
 			//resultado = TestLinkAPIResults.TEST_PASSED;

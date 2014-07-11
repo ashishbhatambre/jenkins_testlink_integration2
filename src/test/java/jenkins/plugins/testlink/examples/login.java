@@ -1,5 +1,30 @@
+/*
+ * The MIT License
+ *
+ * Copyright (c) <2012> <Bruno P. Kinoshita>
+ * 
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ * 
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ * 
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+ * THE SOFTWARE.
+ */
 package jenkins.plugins.testlink.examples;
-//import java.util.regex.Pattern;
+
+import org.testng.Assert;
+import org.testng.annotations.Test;
 import java.util.concurrent.TimeUnit;
 //import org.junit.*;
 import static org.junit.Assert.*;
@@ -16,116 +41,63 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 //import org.testng.Reporter;
 //import org.testng.annotations.*;
 import testlink.api.java.client.TestLinkAPIResults;
+import testlink.api.java.client.TestLinkAPIClient;
+import testlink.api.java.client.TestLinkAPIException;
 
 
-
-
-public class login implements IConstantes{
-
+/**
+ * Tests System.currentTimeMillis()
+ * 
+ * @author Bruno P. Kinoshita - http://www.kinoshita.eti.br
+ * @since 0.3
+ */
+public class login
+{
 	private String resultado = null;
 	  private String nota = null;
 	private WebDriver driver;
 	  private String baseUrl;
 	  private boolean acceptNextAlert = true;
 	  private StringBuffer verificationErrors = new StringBuffer();
-
-	 // @Before
-	 /* public void setUp() throws Exception {
-	    driver = new FirefoxDriver();
+	  final String DEVKEY = "c3ec77835ff0f63da1faae2b526e552f";
+		final String URL = "http://localhost:8081/testlink-1.9.10/lib/api/xmlrpc/v1/xmlrpc.php";
+		final String PROJETO = "testproj1";
+		final String PLANO = "testplan1";
+		final String BUILD = "build1";
+		final String CASO_TESTE1 = "case2";
+	@Test
+	public void login() 
+	{
+		Assert.assertNotNull( System.currentTimeMillis() );
+		
+		//Assert.assertTrue( System.currentTimeMillis() > 0 );
+		System.out.println("login3 working");
+		//System.out.println(id);
+		driver = new FirefoxDriver();
 	    baseUrl = "http://cu156.cloud.maa.collab.net/";
 	    driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	  }
-
-	  //@Test
-	  public void testLogin() throws Exception {
-		 
 	    driver.get(baseUrl + "/sf/sfmain/do/home");
-	    driver.findElement(By.id("username")).clear();
-	    driver.findElement(By.id("username")).sendKeys("admin");
-	    driver.findElement(By.id("pwd")).clear();
-	    driver.findElement(By.id("pwd")).sendKeys("admin");
-	    driver.findElement(By.cssSelector("strong")).click();
-	 // Warning: verifyTextPresent may require manual changes
-	    try {
-	      assertTrue(driver.findElement(By.cssSelector("BODY")).getText().matches("^[\\s\\S]*My Workspace[\\s\\S]*$"));
-	      System.out.println("passed");
-	      resultado = TestLinkAPIResults.TEST_PASSED;
-	    } catch (Error e) {
-	    	System.out.println("failed");
-	    	resultado = TestLinkAPIResults.TEST_FAILED;
-	    	nota = e.getMessage();
-	      verificationErrors.append(e.toString());
-	    }
-	   finally {
-	    	ResultadoExecucao.reportTestCaseResult1(PROJETO, PLANO, CASO_TESTE1, BUILD, nota, resultado);
-	    	}
-	  }
-	  
-
-	  //@After
-	  public void tearDown() throws Exception {
-	    driver.quit();
-	    String verificationErrorString = verificationErrors.toString();
-	    if (!"".equals(verificationErrorString)) {
-	      fail(verificationErrorString);
-	    }
-	  }
-
-	  private boolean isElementPresent(By by) {
-	    try {
-	      driver.findElement(by);
-	      return true;
-	    } catch (NoSuchElementException e) {
-	      return false;
-	    }
-	  }
-
-	  private boolean isAlertPresent() {
-	    try {
-	      driver.switchTo().alert();
-	      return true;
-	    } catch (NoAlertPresentException e) {
-	      return false;
-	    }
-	  }
-
-	  private String closeAlertAndGetItsText() {
-	    try {
-	      Alert alert = driver.switchTo().alert();
-	      String alertText = alert.getText();
-	      if (acceptNextAlert) {
-	        alert.accept();
-	      } else {
-	        alert.dismiss();
-	      }
-	      return alertText;
-	    } finally {
-	      acceptNextAlert = true;
-	    }
-	  }*/
-	 public void login()  {
-		// TODO Auto-generated method stub
-		 System.out.println("hello world");
-           //login lo=new login();
-           /*try{
-           //ResultadoExecucao re= new ResultadoExecucao();
-           //re.reportTestCaseResult1(PROJETO, PLANO, CASO_TESTE1, BUILD, nota, resultado);
-           
-           lo.setUp();
-           lo.testLogin();
-           lo.tearDown();
-		 }
-		 catch(Exception e){
-			 e.printStackTrace();
-		 }*/
-           Assert.assertNotNull( System.currentTimeMillis() );
-   		
-   		Assert.assertTrue( System.currentTimeMillis() > 0 );
-   		//System.out.println("hello world");
-		 }
-	 
-	  
+		driver.findElement(By.id("username")).clear();
+		driver.findElement(By.id("username")).sendKeys("admin");
+		driver.findElement(By.id("pwd")).clear();
+		driver.findElement(By.id("pwd")).sendKeys("admin");
+		driver.findElement(By.cssSelector("strong")).click();
+		// Warning: verifyTextPresent may require manual changes
+		try {
+			assertTrue(driver.findElement(By.cssSelector("BODY")).getText()
+					.matches("^[\\s\\S]*My Workspace[\\s\\S]*$"));
+			System.out.println("passed");
+			Assert.assertTrue( System.currentTimeMillis() > 0 );
+			//resultado = TestLinkAPIResults.TEST_PASSED;
+		} catch (Error e) {
+			System.out.println("failed");
+			resultado = TestLinkAPIResults.TEST_FAILED;
+			Assert.assertFalse( System.currentTimeMillis() > 0 );
+			nota = e.getMessage();
+			verificationErrors.append(e.toString());
+		}
+		
+	    
 	}
-
-
-
+	
+}
